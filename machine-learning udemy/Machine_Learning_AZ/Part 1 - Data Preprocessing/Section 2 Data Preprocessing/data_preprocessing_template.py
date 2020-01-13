@@ -5,8 +5,11 @@ import numpy as np # as short cut. Mathematics library
 import matplotlib.pyplot as plt  # . sublibrary. chart library
 import pandas as pd # import dataset and manage dataset
 
+
 # Importing the dataset
 dataset = pd.read_csv('Data.csv')
+
+# NOTE: Independant variables and dependant variables
 
 X = dataset.iloc[:, :-1].values # first: row, second: column (-1 exclude last column) : Independant variables
 y = dataset.iloc[:, 3].values # dependant variables
